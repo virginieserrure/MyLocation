@@ -1,0 +1,56 @@
+.house-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 60px;
+
+}
+
+.house-card {
+  background-color: $light-grey;
+}
+
+.house-card-title{
+  font-size: 19px;
+  font-weight: bold;
+  padding-left: 8px;
+}
+
+.house-card-body{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.house-card-img{
+
+  img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+}
+
+.house-card-infos1{
+  display: grid;
+  p{
+    margin-bottom: 0;
+  }
+  .price{
+    font-size: 15px;
+    font-weight: bold;
+  }
+}
+
+.house-card-infos2{
+  p{
+    margin-bottom: 0;
+  }
+
+  img{
+    width: 30px;
+    height: 30px;
+    margin-left: 3px;
+  }
+}

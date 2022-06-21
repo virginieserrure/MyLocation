@@ -21,6 +21,7 @@ aurelie = User.create!(
   password: 'azerty')
 
 House.create!(
+  photo: 'https://www.escapasol.com/wp-content/uploads/2017/06/1-maison-%C3%A0-vendre-bord-de-mer-en-espagne.jpg',
   title: 'Maison 4 personnes bord de plage',
   price: 90,
   number_of_people: 4,
@@ -32,6 +33,7 @@ House.create!(
   )
 
 House.create!(
+  photo: 'https://www.mcalpes.com/wp-content/uploads/sites/13/2019/10/maison-neuve-Sonnaz-73000-Savoie-2-1024x626.jpg',
   title: 'Maison à la montagne',
   price: 100,
   number_of_people: 5,
@@ -44,6 +46,7 @@ House.create!(
 
 
 House.create!(
+  photo: 'https://static.pap.fr/photos/061/061A9006.jpg',
   title: 'Maison à la mer',
   price: 150,
   number_of_people: 6,
@@ -55,6 +58,7 @@ House.create!(
   )
 
 House.create!(
+  photo: 'https://www.meilleursagents.com/wikimmo/uploads/2021/05/14.jpg',
   title: 'Maison campagnarde',
   price: 70,
   number_of_people: 5,

@@ -1,0 +1,30 @@
+.banner {
+  background-size: cover;
+  background-position: center 80%;
+  padding: 130px 0;
+
+  h3{
+    color: white;
+    text-align: center;
+  }
+  button{
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    padding: 10px;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    border: black;
+  }
+
+  a{
+    color: white;
+    text-decoration: none;
+
+    &:hover{
+      color: #c4c4c4;
+    }
+  }
+
+}

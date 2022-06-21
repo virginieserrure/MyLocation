@@ -1,7 +1,26 @@
-<ul>
-  <% @houses.each do |house| %>
-    <li><%= house.title %></li>
-    <%= house.city %>
-    <p>Prix: <%= house.price %>€ - Nombre de personne: <%= house.number_of_people %> - Nombre de chambre: <%= house.number_of_bedroom %></p>
-  <% end %>
-</ul>
+<div class='container'>
+  <h1>Touver une location</h1>
+  <div class='house-cards'>
+    <% @houses.each do |house| %>
+    <div class= 'house-card'>
+      <div class= 'house-card-img'>
+        <img height= 200 src="<%= house.photo  %>">
+      </div>
+      <div class= 'house-card-title'>
+      <%= house.title %>
+      </div>
+      <div class='house-card-body'>
+        <div class='house-card-infos1'>
+          <%= house.city %>
+          <p class='price'><%= house.price %>€ par nuit</p>
+        </div>
+        <div class='house-card-infos2'>
+          <p><%= house.number_of_people %>   <img src="https://cdn-icons-png.flaticon.com/512/5874/5874704.png"></p>
+          <p><%= house.number_of_bedroom %>   <img src="https://cdn-icons-png.flaticon.com/512/1247/1247032.png"></p>
+        </div>
+      </div>
+
+    </div>
+    <% end %>
+  </div>
+</div>
