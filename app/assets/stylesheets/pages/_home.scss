@@ -1,1 +1,70 @@
 // Specific CSS for your home-page
+.home-presentation{
+  display: flex;
+  justify-content: space-around;
+  height: 200px;
+  text-align: center;
+  padding-top: 40px;
+
+  .annonce{
+    display: grid;
+    max-width: 200px;
+    height: 175px;
+
+    button {
+      padding: 6px;
+      color: white;
+      background-color: #ffa759;
+      border-radius: 6px;
+      border: #ffa759;
+
+      &:hover{
+        color: black;
+      }
+    }
+
+  }
+
+  .reservation{
+    display: grid;
+    max-width: 200px;
+    height: 175px;
+
+    button{
+      color: white;
+      background-color: #ffa759;
+      border-radius: 6px;
+      border: #ffa759;
+
+      &:hover{
+        color: black;
+      }
+    }
+  }
+
+  .bien{
+    display: grid;
+    max-width: 200px;
+    height: 175px;
+
+    button {
+      padding: 8px;
+      color: white;
+      background-color: #ffa759;
+      border-radius: 6px;
+      border: #ffa759;
+
+      &:hover{
+        color: black;
+      }
+    }
+  }
+
+  img{
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin: auto;
+
+  }
+}
