@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  price: 1
+  number_of_people: 1
+  number_of_bedroom: 1
+  number_of_bathroom: 1
+  city: MyString
+  available: MyString
+  user: one
+
+two:
+  title: MyString
+  price: 1
+  number_of_people: 1
+  number_of_bedroom: 1
+  number_of_bathroom: 1
+  city: MyString
+  available: MyString
+  user: two
