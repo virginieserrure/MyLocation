@@ -1,0 +1,5 @@
+meta_product_name: "My Location Maison"
+meta_title: "My Location Maison - L'outil qu'il vous manquait pour vous choisir votre location idéale !"
+meta_description: "Nous vous offrons une solution pour vous aider à choisir votre location."
+meta_image: "cover.png" # should exist in `app/assets/images/`
+twitter_account: "@product_twitter_account"   # required for Twitter Cards
