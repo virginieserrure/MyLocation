@@ -1,0 +1,52 @@
+<div class='container'>
+
+  <div class='card-show'>
+
+    <div class='house-cards'>
+      <div class= 'house-card'>
+        <div class= 'house-card-img'>
+          <img height= 200 src="<%= @house.photo  %>">
+        </div>
+        <div class= 'house-card-title'>
+        <%= @house.title %>
+        </div>
+        <div class='house-card-body'>
+          <div class='house-card-infos1'>
+            <%= @house.city %>
+            <p class='price'><%= @house.price %>€ par nuit</p>
+          </div>
+          <div class='house-card-infos2'>
+            <p><%= @house.number_of_people %>   <img src="https://cdn-icons-png.flaticon.com/512/5874/5874704.png"></p>
+            <p><%= @house.number_of_bedroom %>   <img src="https://cdn-icons-png.flaticon.com/512/1247/1247032.png"></p>
+            <p><%= @house.number_of_bathroom %>   <img src="https://dbdzm869oupei.cloudfront.net/img/sticker/preview/4372.png"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <label for="start">Start date:</label>
+  <input type="date" id="start" name="trip-start"
+        value="2022-06-23">
+
+  <label for="end">End date:</label>
+  <input type="date" id="end" name="trip-end"
+        value="2022-06-24">
+
+  <div class="container d-flex justify-content-around">
+  <div class="form-wrapper" style="width: 400px; margin: 0 auto;" data-controller="flatpickr">
+    <h2>When ?!</h2>
+    <% if current_user.id != @house.user_id  %>
+      <%= simple_form_for :search, method: "get" do |f| %>
+      <%#= f.input :starts_at, as: :string, required: false, input_html: {class: "datepicker"} %>
+      <%= f.input :starts_date, as: :string, required: false, input_html: {  data: { flatpickr_target: "start"}, class:"datepicker" } %>
+      <%#= f.input :ends_at, as: :string, required: false, input_html: {class: "datepicker"} %>
+      <%= f.input :ends_date, as: :string, required: false, input_html: {data: { flatpickr_target: "end"}, class:"datepicker"} %>
+      <%= f.button :submit, "Go", class: "btn btn-primary" %>
+      <% end %>
+    <% end %>
+ </div>
+ </div>
+  </div>
+  </div>
+
+</div>
